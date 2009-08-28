@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+# python libs
+import os
+import sys
+
+# own modules
+sys.path.append(os.path.dirname(__file__)+'/modules/')
+from core import core
+
+# Go Go Go!
+puby = core()
+puby.irc.start()
